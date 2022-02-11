@@ -1,1 +1,2 @@
 [![Build Status](https://app.travis-ci.com/Dm-prog/job4j_threads.svg?branch=master)](https://app.travis-ci.com/Dm-prog/job4j_threads)
+1. Проект содержит задачи: что такое многозадачность, запуск, состояние, режим ожидания, прерывание нити, прерывание блокировки, скачивание файла с ограничением.
