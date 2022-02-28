@@ -11,15 +11,17 @@ public class ConsoleProgress implements Runnable {
     @Override
     public void run() {
         String[] arr = {"|", "/", "--", "\\", "|", "/", "--", "\\"};
+        int index = 0;
         while (!Thread.currentThread().isInterrupted()) {
             for (String s : arr) {
-                System.out.print("\r load: " + s);
+                System.out.print("\r load: " + arr[index++]);
                 try {
                     Thread.sleep(500);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
             }
+            index = 0;
         }
     }
 }
